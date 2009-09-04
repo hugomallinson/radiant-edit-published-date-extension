@@ -4,7 +4,7 @@ class EditPublishedDateExtension < Radiant::Extension
   url "http://github.com/sofadesign/radiant-edit-published-date-extension/tree/master"
   
   def activate
-    admin.page.edit.add('extended_metadata', 'edit_dates')
+    admin.page.edit.add :extended_metadata, 'edit_dates'
   end
   
   def deactivate
